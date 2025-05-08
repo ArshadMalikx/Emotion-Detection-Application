@@ -101,6 +101,7 @@ npm start
    ```
    
 ## Project Structure
+ ```bash
 emotion-detection-app/
 ├── frontend/ # React application
 │ ├── src/
@@ -111,7 +112,7 @@ emotion-detection-app/
 ├── routes/ # API endpoints
 ├── models/ # Database schemas
 └── middleware/ # Authentication
-
+  ```
 
 ## API Endpoints
 
