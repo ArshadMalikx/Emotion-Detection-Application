@@ -1,0 +1,141 @@
+.history {
+  padding: 1rem;
+}
+
+.history-header {
+  margin-bottom: 2rem;
+}
+
+.history-header h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.history-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: white;
+  color: var(--text-color);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.9rem;
+  box-shadow: var(--box-shadow);
+}
+
+.filter-btn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.filter-btn.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.history-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-item {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+.timeline-time {
+  background: #f8f9fa;
+  padding: 0.75rem 1rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.timeline-content {
+  padding: 1rem;
+}
+
+.timeline-emotion {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.emotion-icon {
+  font-size: 2rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.emotion-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.emotion-name {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.emotion-score {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.timeline-other-emotions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.other-emotion {
+  background: #f8f9fa;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.history-empty {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.history-empty p {
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .history-filters {
+    justify-content: center;
+  }
+
+  .timeline-other-emotions {
+    flex-direction: column;
+  }
+
+  .other-emotion {
+    width: 100%;
+  }
+} 
